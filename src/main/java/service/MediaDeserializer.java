@@ -13,9 +13,9 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import pojo.Media;
-import pojo.Movie;
-import pojo.TvShow;
+import pojo.tmdb.Media;
+import pojo.tmdb.Movie;
+import pojo.tmdb.TvShow;
 
 public class MediaDeserializer extends StdDeserializer<Media> {
 
@@ -43,7 +43,6 @@ private Map<String, Class<? extends Media>> registry = new HashMap<>();
     }
     if (mediaClass == null) return null;
 
-    Media media = mapper.treeToValue(root, mediaClass);
-    return media;
+    return mapper.treeToValue(root, mediaClass);
   }
 }

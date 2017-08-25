@@ -8,11 +8,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import lombok.NoArgsConstructor;
-import pojo.Media;
-import pojo.Movie;
-import pojo.SearchType;
-import pojo.TMDBResponse;
-import pojo.TvShow;
+import pojo.tmdb.Media;
+import pojo.tmdb.SearchType;
+import pojo.tmdb.TMDBResponse;
 
 @NoArgsConstructor
 public class TMDBService {

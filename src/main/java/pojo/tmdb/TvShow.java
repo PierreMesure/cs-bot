@@ -1,4 +1,4 @@
-package pojo;
+package pojo.tmdb;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
