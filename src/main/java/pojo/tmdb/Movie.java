@@ -2,6 +2,8 @@ package pojo.tmdb;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import lombok.Getter;
@@ -23,4 +25,9 @@ public class Movie extends Media {
 
   @JsonProperty("adult")
   private boolean adult;
+
+  public String getYear() {
+    DateFormat format = new SimpleDateFormat("YYYY");
+    return format.format(releaseDate);
+  }
 }
